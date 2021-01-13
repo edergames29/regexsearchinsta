@@ -5,3 +5,4 @@ compilado = re.compile(r'\"username\\":\\"(.+?)"(,|}}}}]}}},)?')
 lista = re.findall(compilado,instajson)
 
 print(lista)
+print(len(lista))
