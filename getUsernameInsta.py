@@ -1,9 +1,7 @@
 import re
 instajson = open('www.instagram.com.har','r').read()
 
-#compilado = re.compile(r'\"username\":\"(.+?)",')
-
 compilado = re.compile(r'\"username\\":\\"(.+?)"(,|}}}}]}}},)?')
 lista = re.findall(compilado,instajson)
 
-print(lista[1])
+print(lista)
